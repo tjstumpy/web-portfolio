@@ -1,4 +1,4 @@
-import React, { useEffect, useInsertionEffect, useState } from "react";
+import React, { useInsertionEffect, useState } from "react";
 import AnimatedLetters from '../AnimatedLetters/animatedletters'
 import './header.scss'
 import 'animate.css'

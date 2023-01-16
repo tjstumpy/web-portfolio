@@ -1,7 +1,6 @@
 import './projects.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFolder } from '@fortawesome/free-regular-svg-icons'
-import { Box } from '@mui/material';
 import ProjectBoard from '../common/projectboard/projectboard';
 
 const Projects = () => {

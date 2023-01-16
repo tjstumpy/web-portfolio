@@ -6,13 +6,13 @@ const Links = () => {
 
 	return(
 		<div className='social-links'>
-			<a href='https://github.com/Tjstumpy' target={'_blank'}>			
+			<a href='https://github.com/Tjstumpy' target={'_blank'} rel="noreferrer">			
 				<FontAwesomeIcon icon={faGithub} className='btn about-icon' color='#9c9c9c'/>
 			</a>
-			<a href='https://www.linkedin.com/in/timstumper/' target={'_blank'}>			
+			<a href='https://www.linkedin.com/in/timstumper/' target={'_blank'} rel="noreferrer">			
 			<FontAwesomeIcon icon={faLinkedinIn} className='btn about-icon' color='#9c9c9c' />
 			</a>
-			<a href='https://www.instagram.com/tjstumpy/' target={'_blank'}>			
+			<a href='https://www.instagram.com/tjstumpy/' target={'_blank'} rel="noreferrer">			
 			<FontAwesomeIcon icon={faInstagram} className='btn about-icon' color='#9c9c9c' />
 			</a>
 		</div>

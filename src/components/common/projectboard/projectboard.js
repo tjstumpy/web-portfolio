@@ -1,5 +1,5 @@
 import './projectboard.scss'
-import { Typography, Paper, Box, Button } from '@mui/material';
+import { Typography, Paper, Button } from '@mui/material';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -12,7 +12,7 @@ const ProjectBoard = ({ title, desc, link}) => {
 							{desc}
 						</Typography>
 					<Button sx={{p: 0}}>
-						<a href={link} target='_blank'><FontAwesomeIcon icon={faGithub} className='github-icon' color='#9c9c9c' /></a>
+						<a href={link} target='_blank' rel="noreferrer"><FontAwesomeIcon icon={faGithub} className='github-icon' color='#9c9c9c' /></a>
 					</Button>
 				</Paper>
 	)

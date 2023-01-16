@@ -1,6 +1,6 @@
 import './navbar.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faFolder, fahom, faUser } from '@fortawesome/free-regular-svg-icons'
+import { faEnvelope, faFolder, faUser } from '@fortawesome/free-regular-svg-icons'
 
 const Navbar = () => (
 
@@ -19,7 +19,7 @@ const Navbar = () => (
 					<a className='contact-text' href="#contact">Contact</a>
 				</div>
 				<button className='resume-btn'>
-					<a href={require('../../assets/resume-2023.pdf')} target="_blank">Resume</a>
+					<a href={require('../../assets/resume-2023.pdf')} target="_blank" rel="noreferrer">Resume</a>
 				</button>
 			</nav>
 )
