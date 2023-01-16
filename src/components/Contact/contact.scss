@@ -1,0 +1,171 @@
+.contact-wrapper {
+  height: 60em;
+  margin-bottom: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-header {
+  text-align: center;
+  font-size: 2.2em;
+}
+
+.contact-form {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-header,
+.contact-form {
+  margin: 4em;
+}
+
+.contact-form input,
+.contact-form textarea {
+  color: #9c9c9c;
+  background-color: transparent;
+  border: 2px solid #9c9c9c;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.contact-flex {
+  display: flex;
+  justify-content: space-between;
+  width: 25vw;
+}
+
+.contact-input {
+  color: #9c9c9c;
+  text-align: left;
+  font-size: 2em;
+  width: 10vw;
+
+  p {
+    margin: 0;
+  }
+
+  input {
+    width: 10vw;
+  }
+}
+
+.form-submit {
+  background-color: transparent;
+  padding: 10px;
+  width: 20%;
+  border-radius: 10px;
+  transition: 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #9c9c9c50;
+  }
+}
+
+.submit-wrapper {
+  display: flex;
+  justify-content: center;
+}
+#contact-title {
+  color: white;
+  font-size: 3em;
+  margin-top: 0;
+}
+
+#contact-desc {
+  font-size: 1.5em;
+}
+
+#message {
+  margin: 1em 0;
+  width: 25vw;
+}
+
+#message textarea {
+  height: 12.5em;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1100px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-header {
+    margin-bottom: 5vw;
+  }
+
+  .contact-form {
+    margin: 0;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact-flex {
+    width: 45vw;
+  }
+  .contact-input {
+    width: 20vw;
+
+    input {
+      width: 20vw;
+    }
+  }
+
+  #contact-title {
+    margin-bottom: 0;
+  }
+
+  #message {
+    margin: 1em 0;
+    width: 45vw;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .contact-header {
+    margin: 0;
+
+    #contact-desc {
+      font-size: 1em;
+      margin-bottom: 3em;
+    }
+  }
+
+  .contact-input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-flex {
+    flex-direction: column;
+
+    input {
+      margin: 0;
+      width: 45vw;
+    }
+  }
+
+  #email {
+    margin-top: 1em;
+  }
+
+  #message {
+    width: 45vw;
+  }
+
+  #contact-title {
+    font-size: 2em;
+  }
+
+  .form-submit {
+    width: 5em;
+  }
+}
