@@ -26,7 +26,7 @@ const Projects = () => {
 		<div className='about-header' data-aos="fade-up">
 			<FontAwesomeIcon icon={faFolder} className='btn about-icon' color='#9c9c9c' />
 			<h3 className='about-title'>
-				<a id='projects'>Projects</a>
+				<a href='#projects' id='projects'>Projects</a>
 			</h3>
 		</div>
 		<div className="project-bio" data-aos="fade-up">

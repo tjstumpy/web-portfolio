@@ -16,7 +16,7 @@ const About = () => {
 		<div className='about-header' data-aos="fade-up">
 				<FontAwesomeIcon icon={faUser} className='btn about-icon' color='#9c9c9c' />
 				<h3 className='about-title'>
-					<a id='about'>About Me</a>
+					<a href='#about' id='about'>About Me</a>
 					</h3>
 		</div>
 		<div className='info-wrapper' data-aos="fade-up">
@@ -26,7 +26,7 @@ const About = () => {
 				I've been spending the last year improving my skills in a multitude of JavaScript libraries, namely <span style={{color: 'white'}}>Angular</span> and <span style={{color: 'white'}}>React</span>. My favorite programs to develop would have to be using web APIs, as they let me create fun new purposes with some of my favorite apps, like Spotify. Although I've spent most of my time developing front-end code, I have fair experience with <span style={{color: 'white'}}>Node.js</span>, <span style={{color: 'white'}}>MongoDB</span>, and <span style={{color: 'white'}}>PostgreSQL</span> through my internship over the summer of 2022.
 				</span>
 			</div>
-			<img src={Selfie}></img>
+			<img src={Selfie} alt='Tim Stumper'></img>
 		</div>
 	</div>
 	)

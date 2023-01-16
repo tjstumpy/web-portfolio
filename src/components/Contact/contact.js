@@ -22,8 +22,9 @@ const Contact = () => {
 	const formJSX = (
 		<div className='contact-wrapper' data-aos="fade-up">
 			<div className='contact-header'>
-				<a id='contact'></a>
-				<p id='contact-title'>Contact Me</p>
+				<a href= '#contact' id='contact'>
+					<p id='contact-title'>Contact Me</p>
+				</a>
 				<p id='contact-desc'>Any questions? Feel free to reach out!</p>
 			</div>
 
