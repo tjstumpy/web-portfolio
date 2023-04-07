@@ -26,7 +26,8 @@
 @media only screen and (max-width: 800px) {
   .social-links {
     top: 8vh;
-    height: 5em;
+    height: 6em;
+    min-height: 5em;
     width: 20vh;
     flex-direction: row;
     border-radius: 0 0 20px 20px;
