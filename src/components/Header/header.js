@@ -25,7 +25,7 @@ useInsertionEffect(() => {
 				<AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={18} type={'name'}/>
 				{/* <h1 className='animate__animated animate__fadeInUp'>Tim Stumper</h1> */}
 				
-				<h2 className='animate__animated animate__fadeInUp'>Frontend Developer / Undergraduate Student</h2>
+				<h2 className='animate__animated animate__fadeInUp'>Full-Stack Developer at Chubb</h2>
 		</div>
 	</div>
 	);

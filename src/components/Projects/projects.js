@@ -36,17 +36,23 @@ const Projects = () => {
 			{/* <Box sx={{display: 'flex', flexDirection: 'row', gap: 4, pt: 4, height: 370}}> */}
 				<div className='grid-item grid-item-1'>
 					<ProjectBoard 
+					title={'WIP!'} 
+					desc={<p>I have big plans for new projects, but I can't share them yet! They are in the works!</p>}
+					link={'https://github.com/tjstumpy'}/>
+				</div>
+				<div className='grid-item grid-item-2'>
+					<ProjectBoard 
 					title={'Playlist Transfer'} 
 					desc={playlistProject}
 					link={'https://github.com/tjstumpy/playlist-transfer-service'}/>
 				</div>
-				<div className='grid-item grid-item-2'>
+				<div className='grid-item grid-item-3'>
 					<ProjectBoard 
 					title={'Special Needs Analysis'} 
 					desc={needsProject}
 					link={'https://github.com/tjstumpy/special-needs-analysis'}/>
 				</div>
-				<div className='grid-item grid-item-3'>
+				<div className='grid-item grid-item-4'>
 					<ProjectBoard 
 					title={'Student Loan Calc'} 
 					desc={loanProject}
@@ -54,7 +60,7 @@ const Projects = () => {
 				</div>
 			{/* </Box> */}
 			{/* <Box sx={{display: 'flex', flexDirection: 'row', gap: 4, pt: 4, height: 370}}> */}
-			<div className='grid-item grid-item-4'>
+			<div className='grid-item grid-item-5'>
 					<ProjectBoard 
 					title={'SkateStop'} 
 					desc={skateProject}
