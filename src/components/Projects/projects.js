@@ -22,11 +22,13 @@ const Projects = () => {
 	)
 	
 	return (
-	<div className='projects-wrapper'>
+		
+	<div href='' className='projects-wrapper'>
+		<a href='#projects' id='projects'></a>
 		<div className='about-header' data-aos="fade-up">
 			<FontAwesomeIcon icon={faFolder} className='btn about-icon' color='#9c9c9c' />
 			<h3 className='about-title'>
-				<a href='#projects' id='projects'>Projects</a>
+				<a id='projects'>Projects</a>
 			</h3>
 		</div>
 		<div className="project-bio" data-aos="fade-up">
@@ -40,12 +42,12 @@ const Projects = () => {
 					desc={<p>I have big plans for new projects, but I can't share them yet! They are in the works!</p>}
 					link={'https://github.com/tjstumpy'}/>
 				</div>
-				<div className='grid-item grid-item-2'>
+				{/* <div className='grid-item grid-item-2'>
 					<ProjectBoard 
 					title={'Playlist Transfer'} 
 					desc={playlistProject}
 					link={'https://github.com/tjstumpy/playlist-transfer-service'}/>
-				</div>
+				</div> */}
 				<div className='grid-item grid-item-3'>
 					<ProjectBoard 
 					title={'Special Needs Analysis'} 

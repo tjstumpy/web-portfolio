@@ -12,9 +12,9 @@ const Links = () => {
 			<a href='https://www.linkedin.com/in/timstumper/' target={'_blank'} rel="noreferrer">			
 			<FontAwesomeIcon icon={faLinkedinIn} className='btn about-icon' color='#9c9c9c' />
 			</a>
-			<a href='https://www.instagram.com/tjstumpy/' target={'_blank'} rel="noreferrer">			
+			{/* <a href='https://www.instagram.com/tjstumpy/' target={'_blank'} rel="noreferrer">			
 			<FontAwesomeIcon icon={faInstagram} className='btn about-icon' color='#9c9c9c' />
-			</a>
+			</a> */}
 		</div>
 	)
 }
