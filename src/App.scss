@@ -1,15 +1,15 @@
-@import "animate.css";
+@import 'animate.css';
 
 @font-face {
-  font-family: "Helvetica Neue";
-  src: url("./assets/fonts/helvetica-neu.ttf") format("ttf");
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
 }
 
-$primary-color: #181818;
+$primary-color: var(--dark-bg);
 
 input,
 textarea {
-  font-family: "Helvetica Neue";
+  font-family: 'Helvetica Neue';
 }
 
 .footer {
@@ -17,18 +17,17 @@ textarea {
   text-align: center;
   padding-bottom: 5vh;
 
-  a {
+  button {
     text-decoration: none;
-    color: #9c9c9c;
+    background: none;
+    border: none;
+    color: var(--text-secondary);
     font-size: 2em;
     transition: 0.3s;
 
     &:hover {
-      color: #9c9c9c75;
+      color: var(--text-primary);
+      cursor: pointer;
     }
   }
-}
-
-.container-wrapper {
-  width: 100%;
 }

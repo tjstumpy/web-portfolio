@@ -5,6 +5,7 @@
   align-items: center;
   height: fit-content;
   margin: 30rem 0;
+  width: 100%;
 }
 
 .project-bio {
@@ -15,29 +16,50 @@
 }
 
 #projects {
-  background: #212223;
+  background: var(--light-bg);
   text-decoration: none;
-  color: white;
+  color: var(--text-primary);
   padding-right: 0.5em;
   // margin-top: 10em;
   cursor: default;
 }
 
 .grid-container {
+  width: fit-content;
   display: grid;
-  margin-top: 2em;
-  grid-template-columns: auto auto auto;
+  margin-top: 0;
+  grid-template-columns: auto auto;
   gap: 3rem;
+  justify-content: center;
 }
 
-@media only screen and (max-width: 1250px) {
+.wip-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border: 1px solid var(--text-secondary);
+  border-radius: 5px;
+  font-size: 2em;
+  gap: 1em;
+  font-weight: 300;
+
+  .wip-icon {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
   .grid-container {
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
   }
 
   .project-bio {
     p {
       font-size: 1.5em !important;
+      text-align: center;
+      margin-top: 1em;
     }
   }
 }

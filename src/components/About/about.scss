@@ -4,26 +4,26 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100%;
 }
 
 .about-header {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid #fff;
 }
 
 .about-title {
-  color: white;
+  color: var(--text-primary);
   font-size: 3em;
   width: 50vw;
-  border-bottom: 1px solid #fff;
-  margin: 2vh 0 2vh;
   line-height: 0.1em !important;
 
   a {
-    background: #212223;
+    background: var(--light-bg);
     text-decoration: none;
-    color: white;
+    color: var(--text-primary);
     padding-right: 0.5em;
   }
 
@@ -32,17 +32,36 @@
   }
 }
 
+.about-skills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 2em;
+  font-size: 2em;
+  margin-top: 2.5em;
+}
+
+.about-emphasis {
+  color: var(--text-primary);
+  font-weight: bold;
+}
+
 .info-wrapper {
   display: flex;
+  flex: initial;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  text-align: justify;
+  width: 80%;
   margin-top: 5em;
 
   .about-info {
     font-size: 2em;
     max-width: 40%;
     margin-right: 5em;
+    color: var(--text-secondary);
   }
 
   img {
@@ -52,7 +71,7 @@
 }
 
 .about-icon {
-  font-size: 3em;
+  font-size: 4em;
   margin: 0.5em;
 }
 
@@ -65,6 +84,11 @@
     img {
       width: 20em;
     }
+  }
+
+  .about-skills {
+    gap: 1em;
+    font-size: 1.5em;
   }
 }
 
@@ -79,6 +103,11 @@
 
     img {
       width: 15em;
+    }
+
+    .about-skills {
+      gap: 1em;
+      font-size: 2em;
     }
   }
 

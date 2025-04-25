@@ -1,0 +1,27 @@
+.section-header{
+	width: 80%;
+}
+
+.section-icon{
+	font-size: 4em;
+	margin: 0.5em 0.5em 0.5em 0;
+	color: var(--text-secondary);
+}
+
+.section-title {
+  color: var(--text-primary);
+  font-size: 3em;
+  width: 100%;
+  line-height: 0.1em !important;
+
+  a {
+    background: var(--light-bg);
+    text-decoration: none;
+    color: var(--text-primary);
+    padding-right: 0.5em;
+  }
+
+  #title {
+    cursor: default;
+  }
+}

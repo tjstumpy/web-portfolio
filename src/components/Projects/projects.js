@@ -1,77 +1,100 @@
-import './projects.scss'
+import './projects.scss';
+import { faFolder, faBookmark } from '@fortawesome/free-regular-svg-icons';
+import ProjectBoard from '../common/ProjectBoard/projectboard';
+import LoanImage from '../../assets/images/student-loan.png';
+// import PlaylistImage from '../../assets/images/playlist-transfer.png'
+import PortfolioImage from '../../assets/images/portfolio.png';
+import SpecialNeedsImage from '../../assets/images/special-needs.png';
+import SectionHeader from '../common/SectionHeader/SectionHeader';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFolder } from '@fortawesome/free-regular-svg-icons'
-import ProjectBoard from '../common/projectboard/projectboard';
+
+export const projectsData = {
+  // 'playlist': {
+  //   title: 'Music Playlist Transfer',
+  //   description: 'Migrate playlists between streaming services.',
+  //   image: LoanImage,
+  //   link: 'https://github.com/tjstumpy/playlist-transfer-service'
+  // },
+  portfolio: {
+    title: 'Web Portfolio',
+    description: 'This very site!',
+    aboutText: [
+      'This project started as a college assignment back in 2021. We needed to create a portfolio website to showcase our skills, interests, and professional resources.',
+      'Even though this was years ago, I still like to keep this site updated so it accurately displays my skills and interests. I find it quite fun!',
+    ],
+    designText: [
+      'Redesigning this portfolio is always a fun challenge. It allows me to express myself, my skills, and my interests in the way I see fit, while also making sure my designs are translatable to a front-end dev.',
+      'After being a developer for multiple years, I feel like I have a strong understanding for what can realistically be done.',
+      'The image to the right shows the first design that went live, and it was the first design I created in Figma.',
+      'Looking back so many years later, I can truly see how much I have grown as a designer. While I think there are some solid design choices here (I’m still using this color palette!), there are some glaring issues with the user flow and content layout that have been ironed out in more recent iterations.',
+      'Unfortunately, I do not have any screenshots of any designs before this point.',
+      'In the second iteration, I decided to make the entire site one page and have some more fun with animations and other styles. Scrapping the card-based user interfaces, I was able to create a much more engaging and immersive page with clean animations and layout.',
+      'The third is very similar to the previous one. Aside from some general UI cleanup, like fixing font sizes/weights, shrinking rounded edges, and cleaning up the header layout, I focused on fleshing out the projects section by giving them an image display and a link to a whole separate page (this one).',
+      'I am excited for what challenges I will face on my next design; whenever that may be. In the meantime, please feel free to explore these designs more in depth from the Figma linked at the top of the page!',
+    ],
+    implementationText: [
+      'This portfolio has been rebuilt multiple times from the ground up, each time with a different design and implementation approach. With each iteration, I focused on learning a new skill or technology.',
+      'The first build, in 2020, was the first website I created and deployed. I put into practice the HTML, CSS, JS fundamentals that I learned in college.',
+      'I also learned external skills, such as the process of buying a custom domain, hosting a website, and creating a custom email.',
+      'The second build, in 2022, was one of the first steps I took into learning React. Shortly after my front-end web development internship in the summer of 2021, I wanted to expand my framework knowledge beyond Angular. So, I thought modernizing my portfolio into React would warrant a nice introductory challenge that would pay off in the long run.',
+      'Lastly, this most recent build as of 2025 is still in the works, and being rewritten with more modern React practices and Tailwind as the main driver for styling.',
+    ],
+    image: PortfolioImage,
+    githubLink: 'https://github.com/tjstumpy/web-portfolio',
+    figmaLink:
+      'https://www.figma.com/design/X6xpbjMBUA7gFmRTgwg4yF/Personal-Website?node-id=506-64&t=ViI8dDh2UHH7s5LQ-1',
+    demoLink: 'https://timstumper.com',
+  },
+  loan: {
+    title: 'Student Loan Calculator',
+    description: 'Plan and visualize how to pay off your loans.',
+    image: LoanImage,
+    githubLink: 'https://github.com/tjstumpy/student-loan-calculator',
+    figmaLink:
+      'https://www.figma.com/design/0000000000000000000000000000000000000000/0000000000000000000000000000000000000000',
+    demoLink: 'https://tjstumpy.github.io/student-loan-calculator/',
+  },
+  'needs-analysis': {
+    title: 'Special Needs',
+    description: 'Understand the benefits you are eligible for.',
+    image: SpecialNeedsImage,
+    githubLink: 'https://github.com/tjstumpy/special-needs-analysis',
+    figmaLink:
+      'https://www.figma.com/design/0000000000000000000000000000000000000000/0000000000000000000000000000000000000000',
+    demoLink: 'https://tjstumpy.github.io/special-needs-analysis/',
+  },
+};
 
 const Projects = () => {
-
-	const playlistProject = (
-		<p>A <span style={{color: 'white'}}>full-stack</span> web application using <span style={{color: 'white'}}>Node.js</span>, <span style={{color: 'white'}}>REST APIs</span>, and <span style={{color: 'white'}}>React</span> which eleminates many tedious tasks of cross-platform playlist management. Relies heavily on <span style={{color: 'white'}}>OAuth</span> for platforms like Spotify, Apple Music, and YouTube in order for users to acess their data.</p>
-	);
-
-	const needsProject = (
-		<p>An <span style={{color: 'white'}}>Angular</span> web app which tells users which special needs benefits they (or a dependent) are eligible for after completing a form. Made possible with <span style={{color: 'white'}}>MongoDB</span> backend and <span style={{color: 'white'}}>HighCharts</span> for data visualization.</p>
-	)
-
-	const loanProject = (
-		<p>An <span style={{color: 'white'}}>Angular</span> web app which helps users pay off their student loans given a set of inputs (loan amount, interest rate, term, etc). Utilizes <span style={{color: 'white'}}>HighCharts</span> to display a timeline of loan amortization alongside <span style={{color: 'white'}}>Bootstrap</span> for a smooth UI and UX.</p>
-	)
-
-	const skateProject = (
-		<p>Full-stack web application using <span style={{color: 'white'}}>Google Maps API</span> accompanied with <span style={{color: 'white'}}>Firebase Realtime Database</span> which helped process uploaded files and marker information. Interactive map markers display correlating user submitted data regarding desirable skate parks near the user.</p>
-	)
-	
-	return (
-		
-	<div href='' className='projects-wrapper'>
-		<a href='#projects' id='projects'></a>
-		<div className='about-header' data-aos="fade-up">
-			<FontAwesomeIcon icon={faFolder} className='btn about-icon' color='#9c9c9c' />
-			<h3 className='about-title'>
-				<a id='projects'>Projects</a>
-			</h3>
-		</div>
-		<div className="project-bio" data-aos="fade-up">
-			<p style={{fontSize: '1vw', textAlign: 'center'}}>Some of my most relevant projects to date</p>
-		</div>
-		<div className="grid-container" data-aos="fade-up">
-			{/* <Box sx={{display: 'flex', flexDirection: 'row', gap: 4, pt: 4, height: 370}}> */}
-				<div className='grid-item grid-item-1'>
-					<ProjectBoard 
-					title={'WIP!'} 
-					desc={<p>I have big plans for new projects, but I can't share them yet! They are in the works!</p>}
-					link={'https://github.com/tjstumpy'}/>
-				</div>
-				{/* <div className='grid-item grid-item-2'>
-					<ProjectBoard 
-					title={'Playlist Transfer'} 
-					desc={playlistProject}
-					link={'https://github.com/tjstumpy/playlist-transfer-service'}/>
-				</div> */}
-				<div className='grid-item grid-item-3'>
-					<ProjectBoard 
-					title={'Special Needs Analysis'} 
-					desc={needsProject}
-					link={'https://github.com/tjstumpy/special-needs-analysis'}/>
-				</div>
-				<div className='grid-item grid-item-4'>
-					<ProjectBoard 
-					title={'Student Loan Calc'} 
-					desc={loanProject}
-					link={'https://github.com/tjstumpy/student-loan-calculator'}/>
-				</div>
-			{/* </Box> */}
-			{/* <Box sx={{display: 'flex', flexDirection: 'row', gap: 4, pt: 4, height: 370}}> */}
-			<div className='grid-item grid-item-5'>
-					<ProjectBoard 
-					title={'SkateStop'} 
-					desc={skateProject}
-					link={'https://github.com/tjstumpy/playlist-transfer-service'}/>
-			</div>
-			{/* </Box> */}
-		</div>
-		</div>
-	)
-}
+  return (
+    <div className="projects-wrapper">
+      <SectionHeader icon={faFolder} title="Projects" navigation="projects" />
+      <div className="project-bio" data-aos="fade-up">
+        <p style={{ fontSize: '2em', textAlign: 'center', marginTop: '1em', marginBottom: '1em' }}>
+          Some of my most relevant projects to date
+        </p>
+      </div>
+      <div className="grid-container" data-aos="fade-up">
+        {Object.entries(projectsData).map(([key, project], idx) => (
+          <div key={idx} className={`grid-item grid-item-${idx + 1}`}>
+            <ProjectBoard
+              image={project.image}
+              title={project.title}
+              summary={project.description}
+              githubUrl={project.githubLink}
+              projectPath={`/projects/${key}`}
+            />
+          </div>
+        ))}
+        <div className="grid-item grid-item-5">
+          <div className="wip-container">
+            <FontAwesomeIcon icon={faBookmark} className="wip-icon" />
+            <span>New projects coming soon!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Projects;

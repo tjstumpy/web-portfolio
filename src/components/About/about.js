@@ -1,38 +1,49 @@
-import './about.scss'
+import './about.scss';
 import { useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-regular-svg-icons'
-import Selfie from '../../assets/images/me.png'
-import 'aos/dist/aos.css'
+import { faUser } from '@fortawesome/free-regular-svg-icons';
+import Selfie from '../../assets/images/me.png';
+import 'aos/dist/aos.css';
 import Aos from 'aos';
+import SectionHeader from '../common/SectionHeader/SectionHeader';
 
 const About = () => {
-	useEffect(() => {
-		Aos.init({ duration: 1500 });
-	}, []);
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
 
-	return (
-		<div className='about-wrapper'>
-			<a href='#about' id='about'></a>
-			<div className='about-header' data-aos="fade-up">
-				<FontAwesomeIcon icon={faUser} className='btn about-icon' color='#9c9c9c' />
-				<h3 className='about-title'>
-					<a id='about'>About Me</a>
-				</h3>
-			</div>
-			<div className='info-wrapper' data-aos="fade-up">
-				<div className='about-info' data-aos="fade-up">
-					<span>Hello! My name is Tim and I work as a <span style={{ color: 'white' }}>full-stack software engineer</span> at Chubb, where my primary focus is to maintain and develop <span style={{ color: 'white' }}>.NET web APIs</span>. I graduated with a <span style={{ color: 'white' }}>Bachelor of Science</span> in Computer Science from the University of Delaware back in May 2023.
-						<br /><br />
-						Throughout college, I focused my studies on <span style={{ color: 'white' }}>web development</span> via <span style={{ color: 'white' }}>Angular</span> and <span style={{ color: 'white' }}>React</span>, <span style={{ color: 'white' }}>UI design</span> via <span style={{ color: 'white' }}>Figma</span>, and <span style={{ color: 'white' }}>UX design</span> via courses like <span style={{ color: 'white' }}>Human Computer Interaction</span>.
-						<br /><br />
-						My two favorite hobbies at the moment are <span style={{ color: 'white' }}>learning Japanese</span> and <span style={{ color: 'white' }}>rock climbing</span>.
-					</span>
-				</div>
-				<img src={Selfie} alt='Tim Stumper'></img>
-			</div>
-		</div>
-	)
-}
+  return (
+    <div className="about-wrapper" data-aos="fade-up">
+      <SectionHeader icon={faUser} title="About Me" navigation="about" />
+      <div className="info-wrapper">
+        <div className="about-info" data-aos="fade-up">
+          <span>
+            Hello! I’m Tim Stumper and I currently work as a{' '}
+            <span className="about-emphasis">full-stack software engineer</span> at Chubb, where I
+            maintain and develop <span className="about-emphasis">.NET APIs</span>
+            <br />
+            <br />
+            Throughout college I studied front-end web development, core{' '}
+            <span className="about-emphasis">UI/UX fundamentals</span>,{' '}
+            <span className="about-emphasis">HCI</span>, and more. I still work on improving these
+            skills every day in my personal life, through passion projects and educational material.
+            <br />
+            <br />
+            My two favorite hobbies at the moment are learning{' '}
+            <span className="about-emphasis">Japanese</span> and{' '}
+            <span className="about-emphasis">rock climbing</span>.
+          </span>
+        </div>
+        <img src={Selfie} alt="Photo of me" data-aos="fade-up"></img>
+      </div>
+      <div className="about-skills" data-aos="fade-up">
+        <span>Full-Stack</span>
+        <span>|</span>
+        <span>User Experience Engineering</span>
+        <span>|</span>
+        <span>User Interface Design</span>
+      </div>
+    </div>
+  );
+};
 
 export default About;

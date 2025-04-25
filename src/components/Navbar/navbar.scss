@@ -1,5 +1,5 @@
 .nav-bar {
-  background: #181818;
+  background: var(--dark-bg);
   height: 8vh;
   min-height: 8em;
   width: 100%;
@@ -18,20 +18,20 @@
     margin: 1em 2em;
     padding: 0.75em;
     font-size: 1.5em;
-    color: #4a98bf;
+    color: var(--accent-primary);
     background-color: transparent;
-    border: 1px solid #4a98bf;
-    border-radius: 10px;
+    border: 1px solid var(--accent-primary);
+    border-radius: 5px;
     cursor: pointer;
     transition: 0.2s;
 
     a {
       text-decoration: none;
-      color: #4a98bf;
+      color: var(--accent-primary);
     }
 
     &:hover {
-      background-color: #4a98bf25;
+      background-color: var(--accent-primary-hover);
     }
   }
 
@@ -50,8 +50,10 @@
       opacity: 0;
       position: absolute;
       text-decoration: none;
-      color: #9c9c9c;
+      color: var(--text-secondary);
       font-size: 1.5em;
+      scale: 0.9;
+      transition: all 0.2s;
     }
 
     &:hover {
@@ -74,18 +76,22 @@
 @keyframes fadeout {
   0% {
     opacity: 1;
+    scale: 1;
   }
   100% {
     opacity: 0;
+    scale: 0.8;
   }
 }
 
 @keyframes fadein {
   0% {
     opacity: 0;
+    scale: 0.8;
   }
   100% {
     opacity: 1;
-    color: white;
+    color: var(--text-primary);
+    scale: 1;
   }
 }

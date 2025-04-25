@@ -13,8 +13,8 @@
 
   &:hover {
     animation: rubberBand 1s;
-    color: #4a98bf;
-    filter: drop-shadow(0 0 0.25rem #4a98bf50);
+    color: var(--accent-primary);
+    filter: drop-shadow(0 0 0.25rem var(--accent-primary-hover));
     cursor: pointer;
   }
 }

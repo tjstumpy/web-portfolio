@@ -11,21 +11,24 @@ const Header = () => {
 	const nameArray = ['T', 'i', 'm', ' ', 'S', 't', 'u', 'm', 'p', 'e', 'r']
 
 useInsertionEffect(() => {
-	return setTimeout(() => {
+	const timeoutId = setTimeout(() => {
 		setLetterClass('text-animate-hover')
 	}, 4000)
+
+	return () => {
+		clearTimeout(timeoutId);
+	};
 }, [])
 
 	return (
 	<div className='header-wrapper'>
 		<div className='text-area'>
-				{/* <span>Hi, my name is</span> */}
 				<AnimatedLetters letterClass={letterClass} strArray={introArray} idx={10} type={'intro'}/>
 				<br />
 				<AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={18} type={'name'}/>
 				{/* <h1 className='animate__animated animate__fadeInUp'>Tim Stumper</h1> */}
 				
-				<h2 className='animate__animated animate__fadeInUp'>Full-Stack Developer at Chubb</h2>
+				<h2 className='animate__animated animate__fadeInUp'>Full-Stack Developer at Chubb with a passion for user experience</h2>
 		</div>
 	</div>
 	);
