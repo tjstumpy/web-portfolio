@@ -1,0 +1,88 @@
+@import '../../../../styles/_variables.scss';
+
+.projects-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  margin: 30rem 0;
+  width: 100%;
+}
+
+.project-bio {
+  width: 85%;
+  p {
+    margin: 0;
+  }
+}
+
+#projects {
+  background: $light-bg;
+  text-decoration: none;
+  color: $text-primary;
+  padding-right: 0.5em;
+  // margin-top: 10em;
+  cursor: default;
+}
+
+.grid-container {
+  width: fit-content;
+  display: grid;
+  margin-top: 0;
+  grid-template-columns: auto auto;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.wip-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border: 1px solid $text-secondary;
+  border-radius: 5px;
+  font-size: 2em;
+  gap: 1em;
+  font-weight: 300;
+
+  .wip-icon {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .grid-container {
+    grid-template-columns: auto;
+  }
+
+  .project-bio {
+    p {
+      font-size: 1.5em !important;
+      text-align: center;
+      margin-top: 1em;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .projects-wrapper {
+    margin-top: 20rem;
+  }
+  .grid-container {
+    grid-template-columns: auto;
+  }
+
+  .about-title {
+    #about {
+      font-size: 0.75em;
+    }
+  }
+
+  .project-bio {
+    p {
+      font-size: 1.5em !important;
+    }
+  }
+}

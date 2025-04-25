@@ -6,5 +6,8 @@
   "trailingComma": "es5",
   "bracketSpacing": true,
   "endOfLine": "auto",
-  "arrowParens": "avoid"
-} 
+  "arrowParens": "avoid",
+  "importOrder": ["^react", "^@?\\w", "^[./]"],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}

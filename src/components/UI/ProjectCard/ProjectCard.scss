@@ -1,0 +1,44 @@
+@import '../../../styles/_variables.scss';
+
+.github-icon {
+  font-size: 3em;
+  margin: 0.5em;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.img-wrapper {
+  max-height: 100%;
+  max-width: 100%;
+  background-color: red;
+}
+
+.project-img {
+  width: fit-content;
+  height: 50%;
+}
+
+.external-link-btn {
+  padding: 1em 1.5em;
+  font-size: 1.5em;
+  color: $accent-primary;
+  background-color: transparent;
+  border: 1px solid $accent-primary;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+
+  a {
+    text-decoration: none;
+    color: $accent-primary;
+  }
+
+  &:hover {
+    background-color: $accent-primary-hover;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+}

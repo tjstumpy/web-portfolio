@@ -1,0 +1,71 @@
+@import '../../../../styles/_variables.scss';
+
+.header-wrapper {
+  height: 50vh;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-area {
+  span {
+    font-size: 3rem;
+    color: $text-primary;
+  }
+  h1 {
+    font-size: 10em;
+    margin: 0;
+    color: $text-primary;
+  }
+
+  h2 {
+    font-weight: 200;
+    font-size: 2em;
+    margin: 1.5em 0 0 0;
+    text-align: center;
+    animation-delay: 5s;
+  }
+
+  .intro {
+    font-size: 1em;
+  }
+
+  .name {
+    font-size: 5em;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .text-area {
+    span {
+      font-size: 2rem;
+    }
+
+    .intro {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .text-area {
+    span {
+      font-size: 1rem;
+    }
+
+    .intro {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
+  }
+}
