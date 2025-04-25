@@ -4,6 +4,7 @@ import ProjectBoard from '../common/ProjectBoard/projectboard';
 import LoanImage from '../../assets/images/student-loan.png';
 // import PlaylistImage from '../../assets/images/playlist-transfer.png'
 import PortfolioImage from '../../assets/images/portfolio.png';
+import PortfolioDesignImage from '../../assets/images/portfolio-old.png';
 import SpecialNeedsImage from '../../assets/images/special-needs.png';
 import SectionHeader from '../common/SectionHeader/SectionHeader';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -40,6 +41,7 @@ export const projectsData = {
       'Lastly, this most recent build as of 2025 is still in the works, and being rewritten with more modern React practices and Tailwind as the main driver for styling.',
     ],
     image: PortfolioImage,
+    designImage: PortfolioDesignImage,
     githubLink: 'https://github.com/tjstumpy/web-portfolio',
     figmaLink:
       'https://www.figma.com/design/X6xpbjMBUA7gFmRTgwg4yF/Personal-Website?node-id=506-64&t=ViI8dDh2UHH7s5LQ-1',

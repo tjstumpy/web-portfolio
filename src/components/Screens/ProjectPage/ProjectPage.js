@@ -63,14 +63,38 @@ const ProjectPage = () => {
             {/* design section */}
             <div className="project-about-wrapper">
               <SectionHeader icon={faPen} title="Design" navigation="design" />
-              <div className="info-wrapper" data-aos="fade-up">
-                <div style={{ display: 'flex', flexDirection: 'column' }}>
-                  {project.designText?.map((item, index) => (
-                    <span key={index} className="project-about-info">
-                      {item}
-                    </span>
-                  ))}
+              <div
+                className="info-wrapper"
+                style={{ display: 'flex', flexDirection: 'column' }}
+                data-aos="fade-up"
+              >
+                {project.designText?.slice(0, 2).map((item, index) => (
+                  <span key={index} className="project-about-info">
+                    {item}
+                  </span>
+                ))}
+
+                <div className="design-layout">
+                  <div className="design-text-group">
+                    {project.designText?.slice(2, 6).map((item, index) => (
+                      <span key={index} className="project-about-info">
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+
+                  <img
+                    src={project.designImage}
+                    alt={project.title}
+                    className="project-desc-image"
+                  />
                 </div>
+
+                {project.designText?.slice(6).map((item, index) => (
+                  <span key={index} className="project-about-info">
+                    {item}
+                  </span>
+                ))}
               </div>
             </div>
 
