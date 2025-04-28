@@ -1,44 +1,76 @@
 @import '../../../styles/_variables.scss';
 
-.github-icon {
-  font-size: 3em;
-  margin: 0.5em;
+.project-card {
+  background-color: $light-bg !important;
+  color: $text-primary;
+  width: 50em;
+  // height: 45em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px !important;
+  overflow: hidden;
 
-  &:hover {
-    background-color: transparent;
+  @media (max-width: 600px) {
+    width: 30em;
+    height: 30em;
   }
 }
 
-.img-wrapper {
-  max-height: 100%;
-  max-width: 100%;
-  background-color: red;
+.project-card-image {
+  height: 60%;
+  object-fit: contain;
+  width: 100%;
 }
 
-.project-img {
-  width: fit-content;
-  height: 50%;
+.project-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: $text-primary;
+  flex-grow: 1;
+  padding: 1.5em;
+  gap: 1em;
+  height: 40%;
+  box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.5);
+
+  h3 {
+    font-weight: bold;
+    font-size: 2.5em;
+    margin: 0;
+  }
+
+  p {
+    color: $text-secondary;
+    font-size: 1.4em;
+    margin-top: 0.5em;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 0.8em;
+  }
+}
+
+.project-card-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
 }
 
 .external-link-btn {
-  padding: 1em 1.5em;
-  font-size: 1.5em;
-  color: $accent-primary;
   background-color: transparent;
   border: 1px solid $accent-primary;
+  color: $accent-primary;
+  padding: 0.75em 1.5em;
   border-radius: 5px;
+  font-size: 2em;
   cursor: pointer;
-  transition: 0.2s;
-
-  a {
-    text-decoration: none;
-    color: $accent-primary;
-  }
+  text-decoration: none;
+  text-align: center;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 
   &:hover {
     background-color: $accent-primary-hover;
   }
-}
-
-@media only screen and (max-width: 600px) {
 }

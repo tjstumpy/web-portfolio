@@ -1,6 +1,6 @@
 import './About.scss';
 import React, { useEffect } from 'react';
-import { faUser } from '@fortawesome/free-regular-svg-icons';
+import { User } from 'lucide-react';
 import Selfie from '../../../../assets/images/homepage/me.png';
 import SectionHeader from '../../../UI/SectionHeader/SectionHeader.tsx';
 import 'aos/dist/aos.css';
@@ -13,7 +13,7 @@ const About = () => {
 
   return (
     <div className="about-wrapper" data-aos="fade-up">
-      <SectionHeader icon={faUser} title="About Me" navigation="about" />
+      <SectionHeader icon={<User className="section-icon" />} title="About Me" navigation="about" />
       <div className="info-wrapper">
         <div className="about-info" data-aos="fade-up">
           <span>

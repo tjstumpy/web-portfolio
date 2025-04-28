@@ -9,6 +9,7 @@ import PortfolioDesignImage2 from '../../../../assets/images/portfolio/portfolio
 import SpecialNeedsImage from '../../../../assets/images/benefits/special-needs.png';
 import SectionHeader from '../../../UI/SectionHeader/SectionHeader.tsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Folder } from 'lucide-react';
 
 export const projectsData = {
   portfolio: {
@@ -51,7 +52,7 @@ export const projectsData = {
       'https://www.figma.com/design/0000000000000000000000000000000000000000/0000000000000000000000000000000000000000',
     demoLink: 'https://tjstumpy.github.io/student-loan-calculator/',
   },
-  'needs-analysis': {
+  specialNeeds: {
     title: 'Special Needs',
     description: 'Understand the benefits you are eligible for.',
     image: SpecialNeedsImage,
@@ -65,7 +66,11 @@ export const projectsData = {
 const Projects = () => {
   return (
     <div className="projects-wrapper">
-      <SectionHeader icon={faFolder} title="Projects" navigation="projects" />
+      <SectionHeader
+        icon={<Folder className="section-icon" />}
+        title="Projects"
+        navigation="projects"
+      />
       <div className="project-bio" data-aos="fade-up">
         <p style={{ fontSize: '2em', textAlign: 'center', marginTop: '1em', marginBottom: '1em' }}>
           Some of my most relevant projects to date

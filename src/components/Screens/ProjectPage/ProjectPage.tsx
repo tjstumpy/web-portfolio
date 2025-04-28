@@ -3,8 +3,7 @@ import { useParams } from 'react-router-dom';
 import { projectsData } from '../../Sections/Homepage/Projects/Projects.tsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faFigma } from '@fortawesome/free-brands-svg-icons';
-import { faBookmark, faKeyboard } from '@fortawesome/free-regular-svg-icons';
-import { faPen } from '@fortawesome/free-solid-svg-icons';
+import { BookText, Pencil, Keyboard } from 'lucide-react';
 import Navbar from '../../UI/Navbar/Navbar.tsx';
 import SectionHeader from '../../UI/SectionHeader/SectionHeader.tsx';
 import './ProjectPage.scss';
@@ -50,7 +49,11 @@ const ProjectPage = () => {
 
             {/* about section */}
             <div className="project-about-wrapper">
-              <SectionHeader icon={faBookmark} title="About" navigation="about" />
+              <SectionHeader
+                icon={<BookText className="section-icon" />}
+                title="About"
+                navigation="about"
+              />
               <div className="info-wrapper" data-aos="fade-up">
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
                   {project.aboutText?.map((item, index) => (
@@ -64,7 +67,11 @@ const ProjectPage = () => {
 
             {/* design section */}
             <div className="project-about-wrapper">
-              <SectionHeader icon={faPen} title="Design" navigation="design" />
+              <SectionHeader
+                icon={<Pencil className="section-icon" />}
+                title="Design"
+                navigation="design"
+              />
               <div
                 className="info-wrapper"
                 style={{ display: 'flex', flexDirection: 'column' }}
@@ -94,7 +101,7 @@ const ProjectPage = () => {
                   className="project-desc-image"
                 />
 
-                {project.designText?.slice(5).map((item, index) => (
+                {project.designText?.slice(5).map((item: string, index) => (
                   <span key={index} className="project-about-info">
                     {item}
                   </span>
@@ -104,7 +111,11 @@ const ProjectPage = () => {
 
             {/* implementation section */}
             <div className="project-about-wrapper">
-              <SectionHeader icon={faKeyboard} title="Implementation" navigation="implementation" />
+              <SectionHeader
+                icon={<Keyboard className="section-icon" />}
+                title="Implementation"
+                navigation="implementation"
+              />
               <div className="info-wrapper" data-aos="fade-up">
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
                   {project.implementationText?.map((item, index) => (
