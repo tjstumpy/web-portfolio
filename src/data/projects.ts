@@ -3,7 +3,7 @@ import PortfolioImage from '../assets/images/portfolio/portfolio.png';
 import PortfolioDesignImage from '../assets/images/portfolio/portfolio-old.png';
 import PortfolioDesignImage2 from '../assets/images/portfolio/portfolio-old-2.png';
 import LoanImage from '../assets/images/loan/student-loan.png';
-import SpecialNeedsImage from '../assets/images/benefits/special-needs.png';
+import BenefitsImage from '../assets/images/benefits/special-needs.png';
 
 export const projects = [
   {
@@ -56,20 +56,40 @@ export const projects = [
     links: {
       github: 'https://github.com/tjstumpy/student-loan-calculator',
       figma: '',
-      demo: 'https://tjstumpy.github.io/student-loan-calculator/',
+      demo: '',
     },
-    sections: {},
+    sections: {
+      about: {
+        content: [],
+      },
+      design: {
+        content: [],
+      },
+      implementation: {
+        content: [],
+      },
+    },
   },
   {
-    id: 'specialNeeds',
-    title: 'Special Needs',
+    id: 'benefits',
+    title: 'Benefits Analysis',
     description: 'Understand the benefits you\'re eligible for.',
-    image: SpecialNeedsImage,
+    image: BenefitsImage,
     links: {
-      github: 'https://github.com/tjstumpy/special-needs-analysis',
+      github: 'https://github.com/tjstumpy/student-loan-calculator',
       figma: '',
-      demo: 'https://tjstumpy.github.io/special-needs-analysis/',
+      demo: '',
     },
-    sections: {},
-  },
+    sections: {
+      about: {
+        content: [],
+      },
+      design: {
+        content: [],
+      },
+      implementation: {
+        content: [],
+      },
+    },
+  }
 ];

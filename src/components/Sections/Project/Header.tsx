@@ -23,11 +23,13 @@ const ProjectHeader = ({ project }: { project: any }) => {
               <FontAwesomeIcon icon={faFigma} />
             </a>
             <span>|</span>
-            <a href={project.links.demo} target="_blank" rel="noopener noreferrer" className="cursor-pointer duration-300 hover:text-text-primary">
-              {project.links.demo && project.links.demo.trim() !== ''
-                ? 'View Demo'
-                : 'No demo available'}
-            </a>
+            {project.links.demo && project.links.demo.trim() !== '' ? (
+              <a href={project.links.demo} target="_blank" rel="noopener noreferrer" className="cursor-pointer duration-300 hover:text-text-primary">
+                View Demo
+              </a>
+            ) : (
+              <span className="cursor-default">No demo available</span>
+            )}
           </div>
         </div>
       </div>
