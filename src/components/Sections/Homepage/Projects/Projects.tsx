@@ -7,7 +7,7 @@ import PortfolioImage from '../../../../assets/images/portfolio/portfolio.png';
 import PortfolioDesignImage from '../../../../assets/images/portfolio/portfolio-old.png';
 import PortfolioDesignImage2 from '../../../../assets/images/portfolio/portfolio-old-2.png';
 import SpecialNeedsImage from '../../../../assets/images/benefits/special-needs.png';
-import SectionHeader from '../../../UI/SectionHeader/SectionHeader.tsx';
+import SectionHeader from '../../../UI/SectionHeader.tsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Folder } from 'lucide-react';
 
@@ -45,7 +45,7 @@ export const projectsData = {
   },
   loan: {
     title: 'Student Loan Calculator',
-    description: 'Plan and visualize how to pay off your loans.',
+    description: 'See and plan how to pay off your loans.',
     image: LoanImage,
     githubLink: 'https://github.com/tjstumpy/student-loan-calculator',
     figmaLink:
@@ -54,7 +54,7 @@ export const projectsData = {
   },
   specialNeeds: {
     title: 'Special Needs',
-    description: 'Understand the benefits you are eligible for.',
+    description: 'Understand the benefits you\'re eligible for.',
     image: SpecialNeedsImage,
     githubLink: 'https://github.com/tjstumpy/special-needs-analysis',
     figmaLink:
@@ -67,7 +67,7 @@ const Projects = () => {
   return (
     <div className="projects-wrapper">
       <SectionHeader
-        icon={<Folder className="section-icon" />}
+        icon={<Folder className="text-[3em] text-[var(--text-secondary)] mt-[0.5em] mr-[0.5em] mb-[0.5em] ml-0" />}
         title="Projects"
         navigation="projects"
       />

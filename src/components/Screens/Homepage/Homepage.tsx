@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from '@mui/material';
-import Navbar from '../../UI/Navbar/Navbar.tsx';
-import Links from '../../UI/SocialLinks/SocialLinks.tsx';
+import Navbar from '../../UI/Navbar.tsx';
+import Links from '../../UI/SocialLinks.tsx';
 import Header from '../../Sections/Homepage/Header/Header.tsx';
 import About from '../../Sections/Homepage/About/About.tsx';
 import Projects from '../../Sections/Homepage/Projects/Projects.tsx';

@@ -45,10 +45,10 @@
   margin-top: 2.5em;
 }
 
-.about-emphasis {
-  color: $text-primary;
-  font-weight: bold;
-}
+// .about-emphasis {
+//   color: $text-primary;
+//   font-weight: bold;
+// }
 
 .info-wrapper {
   display: flex;
@@ -61,7 +61,7 @@
   margin-top: 5em;
 
   .about-info {
-    font-size: 2em;
+    font-size: var(--font-size-medium);
     max-width: 40%;
     margin-right: 5em;
     color: $text-secondary;
@@ -81,7 +81,7 @@
 @media only screen and (max-width: 1000px) {
   .info-wrapper {
     .about-info {
-      font-size: 1.5em;
+      font-size: var(--font-size-small);
     }
 
     img {
@@ -91,7 +91,7 @@
 
   .about-skills {
     gap: 1em;
-    font-size: 1.5em;
+    font-size: var(--font-size-small);
   }
 }
 
@@ -99,7 +99,7 @@
   .info-wrapper {
     flex-direction: column-reverse;
     .about-info {
-      font-size: 2em;
+      font-size: var(--font-size-small);
       margin: 2em 0;
       min-width: 80vw;
     }
@@ -109,8 +109,8 @@
     }
 
     .about-skills {
-      gap: 1em;
-      font-size: 2em;
+      gap: 0em;
+      font-size: 1.5em;
     }
   }
 

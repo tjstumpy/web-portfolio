@@ -1,7 +1,6 @@
 import React, { useInsertionEffect, useState } from 'react';
 import AnimatedLetters from '../../../Util/AnimatedLetters/AnimatedLetters.tsx';
 import './Header.scss';
-import 'animate.css';
 
 const Header = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -25,8 +24,6 @@ const Header = () => {
         <AnimatedLetters letterClass={letterClass} strArray={introArray} idx={10} type={'intro'} />
         <br />
         <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={18} type={'name'} />
-        {/* <h1 className='animate__animated animate__fadeInUp'>Tim Stumper</h1> */}
-
         <h2 className="animate__animated animate__fadeInUp">
           Full-Stack Developer at Chubb with a passion for user experience
         </h2>

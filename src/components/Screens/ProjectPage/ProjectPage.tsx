@@ -4,8 +4,8 @@ import { projectsData } from '../../Sections/Homepage/Projects/Projects.tsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faFigma } from '@fortawesome/free-brands-svg-icons';
 import { BookText, Pencil, Keyboard } from 'lucide-react';
-import Navbar from '../../UI/Navbar/Navbar.tsx';
-import SectionHeader from '../../UI/SectionHeader/SectionHeader.tsx';
+import Navbar from '../../UI/Navbar.tsx';
+import SectionHeader from '../../UI/SectionHeader.tsx';
 import './ProjectPage.scss';
 
 const ProjectPage = () => {
@@ -50,7 +50,7 @@ const ProjectPage = () => {
             {/* about section */}
             <div className="project-about-wrapper">
               <SectionHeader
-                icon={<BookText className="section-icon" />}
+                icon={<BookText className="text-[3em] text-[var(--text-secondary)] mt-[0.5em] mr-[0.5em] mb-[0.5em] ml-0" />}
                 title="About"
                 navigation="about"
               />
@@ -68,7 +68,7 @@ const ProjectPage = () => {
             {/* design section */}
             <div className="project-about-wrapper">
               <SectionHeader
-                icon={<Pencil className="section-icon" />}
+                icon={<Pencil className="text-[3em] text-[var(--text-secondary)] mt-[0.5em] mr-[0.5em] mb-[0.5em] ml-0" />}
                 title="Design"
                 navigation="design"
               />
@@ -112,7 +112,7 @@ const ProjectPage = () => {
             {/* implementation section */}
             <div className="project-about-wrapper">
               <SectionHeader
-                icon={<Keyboard className="section-icon" />}
+                icon={<Keyboard className="text-[3em] text-[var(--text-secondary)] mt-[0.5em] mr-[0.5em] mb-[0.5em] ml-0" />}
                 title="Implementation"
                 navigation="implementation"
               />

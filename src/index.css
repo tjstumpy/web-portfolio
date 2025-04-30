@@ -1,7 +1,36 @@
-html {
-  font-size: 60%;
-  width: 100%;
+@import 'animate.css';
+@import 'tailwindcss';
 
+@theme inline {
+  --font-family: var(--font-family);
+  --text-xxsmall: var(--text-xxsmall);
+  --text-xsmall: var(--text-xsmall);
+  --text-small: var(--text-small);
+  --text-medium: var(--text-medium);
+  --text-large: var(--text-large);
+  --text-xlarge: var(--text-xlarge);
+  --text-xxlarge: var(--text-xxlarge);
+  --color-dark-bg: var(--dark-bg);
+  --color-light-bg: var(--light-bg);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-accent-primary: var(--accent-primary);
+  --color-accent-primary-hover: var(--accent-primary-hover);
+}
+
+:root {
+  /* Fonts */
+  --font-family: 'Roboto', sans-serif;
+  
+  /* Font Sizes */
+  --text-xxsmall: 0.833rem;
+  --text-xsmall: 1rem;
+  --text-small: 1.44rem;
+  --text-medium: 2.074rem;
+  --text-large: 3.375rem;
+  --text-xlarge: 7.594rem;
+  --text-xxlarge: 11.391rem;
+  
   /* Colors */
   --dark-bg: #181818;
   --light-bg: #212223;
@@ -11,12 +40,13 @@ html {
   --accent-primary-hover: #4a98bf25;
 }
 
+
+html {
+  font-size: 60%;
+}
+
+
 body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  color: var(--text-secondary);
-  background: var(--light-bg);
-  display: block;
-  /* -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
+  font-family: var(--font-family);
+  @apply text-[var(--text-secondary)] bg-[var(--light-bg)];
 }
