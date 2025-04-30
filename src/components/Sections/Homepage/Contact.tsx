@@ -6,7 +6,7 @@ const Contact = () => {
     <div className="flex flex-col items-center justify-center h-screen w-full">
       <div className="text-center" data-aos="fade-up">
         <a href="#contact" className="cursor-default">
-          <p className="text-large text-text-primary font-light m-0 md:text-xlarge">Contact Me</p>
+          <p className="text-large text-text-primary font-medium m-0 md:text-xlarge">Contact Me</p>
         </a>
         <p className="text-small cursor-default font-light md:text-large">Any questions? Feel free to reach out!</p>
       </div>
