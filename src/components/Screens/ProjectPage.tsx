@@ -1,16 +1,17 @@
 import { useParams } from 'react-router-dom';
-import { projectsData } from '../Sections/Homepage/Projects.tsx';
+import { projects } from '../../data/projects';
 import Navbar from '../UI/Navbar.tsx';
 import ProjectHeader from '../Sections/Project/Header.tsx';
 import Footer from '../UI/Footer.tsx';
 import Links from '../UI/SocialLinks.tsx';
-import About from '../Sections/Project/About.tsx';
-import Design from '../Sections/Project/Design.tsx';
-import Implementation from '../Sections/Project/Implementation.tsx';
+import ProjectSection from '../Sections/Project/ProjectSection.tsx';
 import { Container } from '@mui/material';
+import { BookText, Keyboard, Pencil } from 'lucide-react';
+
 const ProjectPage = () => {
   const { projectName } = useParams<{ projectName: string }>();
-  const project = projectName ? projectsData[projectName as keyof typeof projectsData] : undefined;
+  // const project = projectName ? projects[projectName as keyof typeof projects] : undefined;
+  const project = projects.find(p => p.id === projectName);
 
   if (!project) {
     return <p>Project not found</p>;
@@ -23,12 +24,14 @@ const ProjectPage = () => {
         <Links />
         <Container sx={{ bgcolor: 'var(--light-bg)', height: '100%', p: '0 !important' }}>
           <ProjectHeader project={project} />
-          <About project={project} />
-          <Design project={project} />
-          <Implementation project={project} />
+          <ProjectSection content={project.sections.about!.content} icon={<BookText className="text-text-secondary w-8 h-8 mt-2 mr-2 mb-2 ml-0" />} title="About" />
+          <ProjectSection content={project.sections.design!.content} icon={<Pencil className="text-text-secondary w-8 h-8 mt-2 mr-2 mb-2 ml-0" />} title="Design" />
+          <ProjectSection content={project.sections.implementation!.content} icon={<Keyboard className="text-text-secondary w-8 h-8 mt-2 mr-2 mb-2 ml-0" />} title="Implementation" />
         </Container>
       </div>
-      <Footer />
+      <div className="mt-16">
+        <Footer />
+      </div>
     </>
   );
 };
