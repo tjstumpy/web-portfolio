@@ -1,34 +1,32 @@
-@import "animate.css";
+@import 'animate.css';
+@import './styles/_variables.scss';
 
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("./assets/fonts/helvetica-neu.ttf") format("ttf");
-}
+// @font-face {
+//   font-family: 'Helvetica Neue';
+//   src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
+// }
 
-$primary-color: #181818;
-
-input,
-textarea {
-  font-family: "Helvetica Neue";
-}
+// input,
+// textarea {
+//   font-family: 'Helvetica Neue';
+// }
 
 .footer {
   width: 100%;
   text-align: center;
   padding-bottom: 5vh;
 
-  a {
+  button {
     text-decoration: none;
-    color: #9c9c9c;
+    background: none;
+    border: none;
+    color: $text-secondary;
     font-size: 2em;
     transition: 0.3s;
 
     &:hover {
-      color: #9c9c9c75;
+      color: $text-primary;
+      cursor: pointer;
     }
   }
-}
-
-.container-wrapper {
-  width: 100%;
 }

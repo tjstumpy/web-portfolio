@@ -1,14 +1,22 @@
 html {
   font-size: 60%;
-  scroll-behavior: smooth;
+  width: 100%;
+
+  /* Colors */
+  --dark-bg: #181818;
+  --light-bg: #212223;
+  --text-primary: #ffffff;
+  --text-secondary: #adadad;
+  --accent-primary: #4a98bf;
+  --accent-primary-hover: #4a98bf25;
 }
 
 body {
   margin: 0;
-  font-family: Helvetica;
-  color: #9c9c9c;
-  background: #212223;
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-secondary);
+  background: var(--light-bg);
   display: block;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
 }
