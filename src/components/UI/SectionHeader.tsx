@@ -4,10 +4,10 @@ const SectionHeader = ({ icon, title, navigation }: { icon: React.ReactNode, tit
   return (
     <div className="w-[80%]">
       <a href={`#${navigation}`} id={navigation}></a>
-      <div className="flex items-center justify-center border-b border-text-primary" data-aos="fade-up">
+      <div className="flex items-center justify-center border-b border-text-primary">
         {icon}
-        <h3 className="text-large text-text-primary w-full leading-[0.1em]">
-          <a className="cursor-default bg-light-bg text-text-primary no-underline pr-2">{title}</a>
+        <h3 className="text-medium text-text-primary w-full">
+          <a className="cursor-default bg-light-bg font-medium text-text-primary no-underline pr-2">{title}</a>
         </h3>
       </div>
     </div>

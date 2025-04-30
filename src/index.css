@@ -23,10 +23,10 @@
   --font-family: 'Roboto', sans-serif;
   
   /* Font Sizes */
-  --text-xxsmall: 0.833rem;
+  --text-xxsmall: 0.667rem;
   --text-xsmall: 1rem;
-  --text-small: 1.44rem;
-  --text-medium: 2.074rem;
+  --text-small: 1.5rem;
+  --text-medium: 2.25rem;
   --text-large: 3.375rem;
   --text-xlarge: 7.594rem;
   --text-xxlarge: 11.391rem;
@@ -42,7 +42,7 @@
 
 
 html {
-  font-size: 60%;
+  /* font-size: 60%; */
 }
 
 
