@@ -1,4 +1,4 @@
-import '../../types/custom.d.ts';
+import '../../custom.d.ts';
 import resume from '../../assets/resume-2025.pdf';
 import { User, Folder, Mail, House } from 'lucide-react';
 

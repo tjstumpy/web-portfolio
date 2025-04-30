@@ -1,6 +1,5 @@
-import React from 'react';
 import { useParams } from 'react-router-dom';
-import { projectsData } from '../../Sections/Homepage/Projects/Projects.tsx';
+import { projectsData } from '../../Sections/Homepage/Projects.tsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faFigma } from '@fortawesome/free-brands-svg-icons';
 import { BookText, Pencil, Keyboard } from 'lucide-react';
@@ -10,7 +9,7 @@ import './ProjectPage.scss';
 
 const ProjectPage = () => {
   const { projectName } = useParams<{ projectName: string }>();
-  const project = projectName ? projectsData[projectName] : undefined;
+  const project = projectName ? projectsData[projectName as keyof typeof projectsData] : undefined;
 
   if (!project) {
     return <p>Project not found</p>;
@@ -131,8 +130,8 @@ const ProjectPage = () => {
       </div>
 
       {/* footer */}
-      <div className="footer">
-        <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Back to Top</button>
+      <div className="text-center w-full mb-20">
+        <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-small text-text-secondary font-light duration-300 hover:text-text-primary cursor-pointer">Back to Top</button>
       </div>
     </>
   );

@@ -1,13 +1,11 @@
-import React from 'react';
-import './Projects.scss';
-import { faFolder, faBookmark } from '@fortawesome/free-regular-svg-icons';
-import ProjectCard from '../../../UI/ProjectCard/ProjectCard.tsx';
-import LoanImage from '../../../../assets/images/loan/student-loan.png';
-import PortfolioImage from '../../../../assets/images/portfolio/portfolio.png';
-import PortfolioDesignImage from '../../../../assets/images/portfolio/portfolio-old.png';
-import PortfolioDesignImage2 from '../../../../assets/images/portfolio/portfolio-old-2.png';
-import SpecialNeedsImage from '../../../../assets/images/benefits/special-needs.png';
-import SectionHeader from '../../../UI/SectionHeader.tsx';
+import { faBookmark } from '@fortawesome/free-regular-svg-icons';
+import ProjectCard from '../../UI/ProjectCard.tsx';
+import LoanImage from '../../../assets/images/loan/student-loan.png';
+import PortfolioImage from '../../../assets/images/portfolio/portfolio.png';
+import PortfolioDesignImage from '../../../assets/images/portfolio/portfolio-old.png';
+import PortfolioDesignImage2 from '../../../assets/images/portfolio/portfolio-old-2.png';
+import SpecialNeedsImage from '../../../assets/images/benefits/special-needs.png';
+import SectionHeader from '../../UI/SectionHeader.tsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Folder } from 'lucide-react';
 
@@ -65,32 +63,31 @@ export const projectsData = {
 
 const Projects = () => {
   return (
-    <div className="projects-wrapper">
+    <div className="flex flex-col items-center justify-center h-fit w-full mt-100 mb-100">
       <SectionHeader
-        icon={<Folder className="text-[3em] text-[var(--text-secondary)] mt-[0.5em] mr-[0.5em] mb-[0.5em] ml-0" />}
+        icon={<Folder className="text-text-secondary w-8 h-8 mt-2 mr-2 mb-2 ml-0" />}
         title="Projects"
         navigation="projects"
       />
-      <div className="project-bio" data-aos="fade-up">
-        <p style={{ fontSize: '2em', textAlign: 'center', marginTop: '1em', marginBottom: '1em' }}>
+      <div className="w-[85%]" data-aos="fade-up">
+        <p className="text-xsmall font-light text-center mt-4 mb-4 lg:text-small">
           Some of my most relevant projects to date
         </p>
       </div>
-      <div className="grid-container" data-aos="fade-up">
+      <div className="grid grid-cols-1 gap-4 align-stretch lg:gap-8 lg:grid-cols-2 " data-aos="fade-up">
         {Object.entries(projectsData).map(([key, project], idx) => (
-          <div key={idx} className={`grid-item grid-item-${idx + 1}`}>
+          <div key={idx} className="flex flex-col">
             <ProjectCard
               image={project.image}
               title={project.title}
               summary={project.description}
-              githubUrl={project.githubLink}
               projectPath={`/projects/${key}`}
             />
           </div>
         ))}
-        <div className="grid-item grid-item-5">
-          <div className="wip-container">
-            <FontAwesomeIcon icon={faBookmark} className="wip-icon" />
+        <div className="flex justify-center items-center">
+          <div className="flex flex-col items-center justify-center gap-2 h-75 w-75 border border-text-secondary rounded-sm p-4 md:w-120 md:h-100">
+            <FontAwesomeIcon icon={faBookmark} className="text-medium" />
             <span>New projects coming soon!</span>
           </div>
         </div>
