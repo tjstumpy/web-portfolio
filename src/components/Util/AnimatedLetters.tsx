@@ -1,5 +1,3 @@
-import './AnimatedLetters.scss';
-
 const AnimatedLetters = ({ letterClass, strArray, idx, type }: { letterClass: string, strArray: string[], idx: number, type: string }) => {
   return (
     <span>

@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Homepage from './components/Screens/Homepage/Homepage.tsx';
-import ProjectPage from './components/Screens/ProjectPage/ProjectPage.tsx';
+import Homepage from './components/Screens/Homepage.tsx';
+import ProjectPage from './components/Screens/ProjectPage.tsx';
 import ScrollToTop from './components/Util/ScrollToTop.tsx';
 function App() {
   return (

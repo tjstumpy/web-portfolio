@@ -1,9 +1,8 @@
 import { useInsertionEffect, useState } from 'react';
-import AnimatedLetters from '../../Util/AnimatedLetters/AnimatedLetters.tsx';
+import AnimatedLetters from '../../Util/AnimatedLetters.tsx';
 
 const Header = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
-  // const introArray = ['H', 'e', 'y', ',', ' ', 'm', 'y', ' ', 'n', 'a', 'm', 'e', ' ', 'i', 's']
   const introArray = ['H', 'e', 'y', ',', ' ', 'I', "'", 'm'];
   const nameArray = ['T', 'i', 'm', ' ', 'S', 't', 'u', 'm', 'p', 'e', 'r'];
 
