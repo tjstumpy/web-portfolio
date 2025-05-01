@@ -8,4 +8,3 @@ if (!globalThis.crypto) globalThis.crypto = webcrypto;
 export default defineConfig({
   plugins: [react(), tailwindcss()],
 })
-
