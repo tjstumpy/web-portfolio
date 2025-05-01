@@ -6,7 +6,42 @@ import LoanImage from '../assets/images/loan/student-loan.png';
 import BenefitsImage from '../assets/images/benefits/special-needs.png';
 import BenefitsDesignImage from '../assets/images/benefits/special-needs2.png';
 
-export const projects = [
+export type TextBlock = {
+  type: 'text';
+  value: string;
+};
+
+export type ImageBlock = {
+  type: 'image';
+  src: string;
+  alt?: string;
+};
+
+export type ContentBlock = TextBlock | ImageBlock;
+
+export type Section = {
+  content: ContentBlock[];
+};
+
+export type Project = {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  links: {
+    github: string;
+    figma: string;
+    demo: string;
+  };
+  sections: {
+    about?: Section;
+    design?: Section;
+    implementation?: Section;
+  };
+};
+
+
+export const projects: Project[] = [
   {
     id: 'portfolio',
     title: 'Web Portfolio',
