@@ -40,9 +40,13 @@
   --accent-primary-hover: #4a98bf25;
 
   font-family: var(--font-family);
+  /* scroll-behavior: smooth; */
   @apply text-[var(--text-secondary)] bg-[var(--light-bg)];
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 .text-animate {
   display: inline-block;

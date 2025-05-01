@@ -1,6 +1,6 @@
 import SectionHeader from '../../UI/SectionHeader.tsx';
 
-const ProjectSection = ({ content, icon, title }: { content: any[], icon: any, title: string }) => {
+const ProjectSection = ({ content, icon, title }: { content: { type: string, value: string }[], icon: any, title: string }) => {
   return (
     <div className="w-full flex flex-col items-center pt-16">
       <SectionHeader icon={icon} title={title} navigation={title} />

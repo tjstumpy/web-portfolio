@@ -18,11 +18,11 @@ const Contact = () => {
         >
           <FontAwesomeIcon icon={faLinkedinIn} className="text-xsmall hover:text-text-primary transition-all duration-300 md:text-medium" />
         </a>
-        <span className="text-xsmall opacity-75 md:text-medium">|</span>
+        <span className="text-xsmall md:text-medium">|</span>
         <a href="mailto:me@timstumper.com" className="decoration-none">
           <span className="text-xsmall hover:text-text-primary transition-all duration-300 md:text-medium">me@timstumper.com</span>
         </a>
-        <span className="text-xsmall opacity-75 md:text-medium">|</span>
+        <span className="text-xsmall md:text-medium">|</span>
         <a href="tel:+18603878522" className="decoration-none">
           <span className="text-xsmall hover:text-text-primary transition-all duration-300 md:text-medium">(860) 387-8522</span>
         </a>

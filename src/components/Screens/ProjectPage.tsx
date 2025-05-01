@@ -10,7 +10,6 @@ import { BookText, Keyboard, Pencil } from 'lucide-react';
 
 const ProjectPage = () => {
   const { projectName } = useParams<{ projectName: string }>();
-  // const project = projectName ? projects[projectName as keyof typeof projects] : undefined;
   const project = projects.find(p => p.id === projectName);
 
   if (!project) {
