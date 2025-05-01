@@ -1,14 +1,169 @@
+@import 'animate.css';
+@import 'tailwindcss';
+
+@theme inline {
+  --font-family: var(--font-family);
+  --text-xxsmall: var(--text-xxsmall);
+  --text-xsmall: var(--text-xsmall);
+  --text-small: var(--text-small);
+  --text-medium: var(--text-medium);
+  --text-large: var(--text-large);
+  --text-xlarge: var(--text-xlarge);
+  --text-xxlarge: var(--text-xxlarge);
+  --color-dark-bg: var(--dark-bg);
+  --color-light-bg: var(--light-bg);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-accent-primary: var(--accent-primary);
+  --color-accent-primary-hover: var(--accent-primary-hover);
+}
+
+:root {
+  /* Fonts */
+  --font-family: 'Roboto', sans-serif;
+  
+  /* Font Sizes */
+  --text-xxsmall: 0.667rem;
+  --text-xsmall: 1rem;
+  --text-small: 1.5rem;
+  --text-medium: 2.25rem;
+  --text-large: 3.375rem;
+  --text-xlarge: 7.594rem;
+  --text-xxlarge: 11.391rem;
+  
+  /* Colors */
+  --dark-bg: #181818;
+  --light-bg: #212223;
+  --text-primary: #ffffff;
+  --text-secondary: #adadad;
+  --accent-primary: #4a98bf;
+  --accent-primary-hover: #4a98bf25;
+
+  font-family: var(--font-family);
+  /* scroll-behavior: smooth; */
+  @apply text-[var(--text-secondary)] bg-[var(--light-bg)];
+}
+
 html {
-  font-size: 60%;
   scroll-behavior: smooth;
 }
 
-body {
-  margin: 0;
-  font-family: Helvetica;
-  color: #9c9c9c;
-  background: #212223;
-  display: block;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.text-animate {
+  display: inline-block;
+  opacity: 0;
+  animation: bounceIn 1s;
+  animation-fill-mode: forwards;
+  min-width: 10px;
+}
+
+.text-animate-hover {
+  min-width: 10px;
+  display: inline-block;
+
+  &:hover {
+    animation: rubberBand 1s;
+    color: var(--accent-primary);
+    filter: drop-shadow(0 0 0.25rem var(--accent-primary-hover));
+    cursor: pointer;
+  }
+}
+
+.text-animate._10 {
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.text-animate._11 {
+  animation-delay: 1.1s;
+  animation-fill-mode: forwards;
+}
+
+.text-animate._12 {
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+}
+
+.text-animate._13 {
+  animation-delay: 1.3s;
+  animation-fill-mode: forwards;
+}
+
+.text-animate._14 {
+  animation-delay: 1.4s;
+  animation-fill-mode: forwards;
+}
+
+.text-animate._15 {
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.text-animate._16 {
+  animation-delay: 1.6s;
+  animation-fill-mode: forwards;
+}
+
+.text-animate._17 {
+  animation-delay: 1.7s;
+  animation-fill-mode: forwards;
+}
+
+.text-animate._18 {
+  animation-delay: 1.8s;
+  animation-fill-mode: forwards;
+}
+
+.text-animate._19 {
+  animation-delay: 1.9s;
+  animation-fill-mode: forwards;
+}
+
+.text-animate._20 {
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.text-animate._21 {
+  animation-delay: 2.1s;
+  animation-fill-mode: forwards;
+}
+
+.text-animate._22 {
+  animation-delay: 2.2s;
+  animation-fill-mode: forwards;
+}
+
+.text-animate._23 {
+  animation-delay: 2.3s;
+  animation-fill-mode: forwards;
+}
+
+.text-animate._24 {
+  animation-delay: 2.4s;
+  animation-fill-mode: forwards;
+}
+
+.text-animate._25 {
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+.text-animate._26 {
+  animation-delay: 2.6s;
+  animation-fill-mode: forwards;
+}
+
+.text-animate._27 {
+  animation-delay: 2.7s;
+  animation-fill-mode: forwards;
+}
+
+.text-animate._28 {
+  animation-delay: 2.8s;
+  animation-fill-mode: forwards;
+}
+
+.text-animate._29 {
+  animation-delay: 2.9s;
+  animation-fill-mode: forwards;
 }
