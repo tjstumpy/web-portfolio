@@ -14,7 +14,7 @@ export default function ProjectCard({ image, title, summary, projectPath }: Proj
       <img src={image} alt={title} className="h-50 w-full object-top sm:h-105 " />
       {/* Content */}
       {/*  */}
-      <div className="flex flex-col justify-between p-2 bg-light-bg gap-2 md:p-4" style={{ boxShadow: '0 -4px 10px -4px rgba(0, 0, 0, 0.3)' }}>
+      <div className="flex flex-col justify-between p-2 bg-dark-bg gap-2 md:p-4" style={{ boxShadow: '0 -4px 10px -4px rgba(0, 0, 0, 0.3)' }}>
         <div>
           <h3 className="text-small font-medium text-text-primary">{title}</h3>
           <p className="text-xxsmall font-light text-text-secondary md:text-xsmall">{summary}</p>
