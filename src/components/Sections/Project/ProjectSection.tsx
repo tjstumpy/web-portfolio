@@ -25,12 +25,12 @@ const ProjectSection = ({
   return (
     <div className="w-full flex flex-col items-center pt-16">
       <SectionHeader icon={icon} title={title} navigation={title} />
-      <div className="flex flex-col items-center max-w-[80%] md:max-w-3xl w-full space-y-4 mt-8 mb-8">
+      <div className="flex flex-col items-center max-w-[80%] lg:max-w-3xl w-full space-y-4 mt-8 mb-8">
         {content.map((block, idx) =>
           block.type === 'text' ? (
             <p
               key={idx}
-              className="text-small font-light text-justify leading-relaxed"
+              className="text-xsmall lg:text-small font-light text-justify leading-relaxed"
             >
               {block.value}
             </p>
