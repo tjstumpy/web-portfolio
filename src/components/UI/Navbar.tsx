@@ -45,7 +45,7 @@ const Navbar = ({ page = 'home' }) => (
     <a
       href={resume}
       target="_blank"
-      rel="noreferrer"
+      rel="nofollow noreferrer"
       className="ml-8 px-6 py-3 text-xsmall text-accent-primary border border-accent-primary rounded-md hover:bg-accent-primary-hover transition-all duration-200"
     >
       Resume
